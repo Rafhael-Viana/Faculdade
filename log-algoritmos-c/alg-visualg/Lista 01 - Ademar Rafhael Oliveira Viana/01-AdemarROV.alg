@@ -1,10 +1,11 @@
 algoritmo "Convertendo Unidades m/s -> Km/h"
 // Disciplina  :  [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
-// Descrição   : O programa pega várias entradas processa e exibe na tela o resultado.
+// Descrição   : O programa converte unidades de medida de velocidade (m/s -> Km/h).
 // Autor(a)    : Ademar Rafhael Oliveira Viana
 // Data atual  : 24/08/2023
 
+//OBS: Todos os códigos seguintes foram escritos por uma extensão integradora do visualg ao vscode. Algumas palavras-chave foram utilizadas apenas para melhor visualização na plataforma.
 var
 
 velocidade : real
