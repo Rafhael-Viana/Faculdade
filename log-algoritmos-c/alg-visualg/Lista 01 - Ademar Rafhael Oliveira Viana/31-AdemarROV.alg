@@ -6,7 +6,7 @@ algoritmo "Convertendo Unidades bin -> dec"
 // Data atual  : 26/08/2023
 
 
-//faz a iteração da string
+//retorna o caractere da posição atual
 funcao percorrerString (binario : caractere ; posicao : inteiro) : caractere
 
     inicio
