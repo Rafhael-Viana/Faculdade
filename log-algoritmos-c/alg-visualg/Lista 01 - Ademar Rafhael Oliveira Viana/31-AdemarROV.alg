@@ -26,10 +26,10 @@ funcao convertBintodecimal (binario : caractere) : inteiro
     
     valor <- 0
 
-    //método que lê o tamanho da string ( length(javascript) || len(python) )
+    //metodo que le o tamanho da string ( length(javascript) || len(python) )
     comprimento <- compr(binario)
 
-    //loop que executa as ações de calcular a posição do caractere na cadeia, ler qual o caractere digitado, fazer o valor ser somado com o valor da posição onde o binário é 1
+    //loop que executa as acoes de calcular a posicao do caractere na cadeia, ler qual o caractere digitado, fazer o valor ser somado com o valor da posicao onde o binario e 1
     para indice de 1 ate comprimento faca
     
         //faz com que os expoentes cresçam da esquerda para a direita
@@ -57,16 +57,14 @@ var
 
 binario : caractere
 resultado : inteiro
-
 inicio
 
     escreva("Digite um Binário de até 4 dígitos (apenas 0 ou 1): ")
         leia(binario)
         escreval(binario)
-
+    
     resultado <- convertBintodecimal(binario)
 
     escreva("Conversão: ", resultado)
     
 fimalgoritmo
-
