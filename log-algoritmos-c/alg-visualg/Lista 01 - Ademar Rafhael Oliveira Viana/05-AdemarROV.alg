@@ -7,23 +7,18 @@ algoritmo "Lendo Números"
 
 var
 
-//? Pergunta: Por que mesmo declarando inteiros o programa retorna reais
-numero, soma, digito : real
+numero,uni,dez,cent : inteiro
 
 inicio
 
-    escreva("Digite o número a ser somado:")
+    escreva("Digite um número (3 dígitos): ")
         leia(numero)
         escreval(numero)
-    
-    enquanto (numero > 0) faca
 
-        digito <- numero % 10 //Pega o ultimo digito
-        soma <- soma + digito //Soma o digito com o valor anterior de soma
-        numero <- numero / 10 //remove o ultimo digito do número
+        uni <- numero % 10
+        dez <- int(numero / 10) % 10
+        cent <- int(numero / 100) 
 
-    fimenquanto
-
-    escreva("Soma: ", int(soma)) //? Necessidade do uso do método int()
+    escreva("Soma: ", uni + dez + cent)
 
 fimalgoritmo

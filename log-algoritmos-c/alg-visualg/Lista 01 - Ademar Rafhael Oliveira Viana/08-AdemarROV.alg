@@ -17,16 +17,9 @@ inicio
         leia(segundo_num)
         escreval(segundo_num)
 
-    se (primeiro_num > segundo_num) entao
-        soma <- primeiro_num + segundo_num //calcula a soma entre o primeiro e segundo numeros.
-        diferenca <- primeiro_num - segundo_num //calcula a diferença entre o primeiro e segundo numeros.
-        divisao <- soma / diferenca //calcula a divisão entre a soma e a diferença dos primeiro e segundo numeros.
-    senao
-        soma <- segundo_num + primeiro_num //calcula a soma entre o segundo e primeiro numeros.
-        diferenca <- segundo_num - primeiro_num //calcula a diferença entre o segundo e primeiro numeros.
-        divisao <- soma / diferenca //calcula a divisão entre a soma e a diferença dos segundo e primeiro numeros.
-
-    fimse
+    soma <- primeiro_num + segundo_num //calcula a soma entre o primeiro e segundo numeros.
+    diferenca <- primeiro_num - segundo_num //calcula a diferença entre o primeiro e segundo numeros.
+    divisao <- soma / diferenca //calcula a divisão entre a soma e a diferença dos primeiro e segundo numeros.
 
     escreval("Soma: ",soma)
     escreval("Diferença: ",diferenca)

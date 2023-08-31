@@ -6,23 +6,30 @@ algoritmo "Média Ponderada"
 // Data atual  : 26/08/2023
 var
 
-notas : vetor [0..2] de real
-peso : vetor [0..2] de real
-media_ponderada : real
-indice : inteiro
+media_ponderada,nt1,nt2,nt3,p1,p2,p3 : real
 
 inicio
 
-para indice de 0 ate 2 faca
     escreva("Digite a nota: ")
-        leia(notas[indice])
-        escreval(notas[indice])
+        leia(nt1)
+        escreval(nt1)
     escreva("Digite o peso da nota: ")
-        leia(peso[indice])
-        escreval(peso[indice])
-fimpara
+        leia(p1)
+        escreval(p1)
+    escreva("Digite a nota: ")
+        leia(nt2)
+        escreval(nt2)
+    escreva("Digite o peso da nota: ")
+        leia(p2)
+        escreval(p2)
+    escreva("Digite a nota: ")
+        leia(nt3)
+        escreval(nt3)
+    escreva("Digite o peso da nota: ")
+        leia(p3)
+        escreval(p3)
 
-media_ponderada <- ((notas[0] * peso[0]) + (notas[1] * peso[1]) + (notas[2] * peso[2])) / 3
+media_ponderada <- ((nt1 * p1) + (nt2 * p2) + (nt3 * p3)) / 3
 
 escreva("Média: ",media_ponderada)
 

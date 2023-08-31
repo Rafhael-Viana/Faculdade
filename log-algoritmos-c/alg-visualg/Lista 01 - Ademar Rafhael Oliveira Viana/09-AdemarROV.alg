@@ -10,6 +10,8 @@ primeiro_num,segundo_num: real
 
 inicio
 
+//Enunciado: Leia 2 números (A,B) e escreva-os em ordem inversa (B,A)
+
     escreva("Digite o Primeiro Número: ")
         leia(primeiro_num)
         escreval(primeiro_num)

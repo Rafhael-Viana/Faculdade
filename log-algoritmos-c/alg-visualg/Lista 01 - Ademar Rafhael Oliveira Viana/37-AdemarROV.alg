@@ -6,18 +6,18 @@ algoritmo "Convertendo Unidades m -> dd:hh:mm"
 // Data atual  : 26/08/2023
 var
 
-min_ini,minutos, horas, dias : inteiro
+dia_ini,dias, meses, anos : inteiro
 
 inicio
 
-    escreva("Quantidade de Minutos: ")
-        leia(min_ini)
-        escreval(min_ini,"m")
+    escreva("Quantidade de Dias: ")
+        leia(dia_ini)
+        escreval(dia_ini," dias")
 
-    dias <- int(min_ini / 1440)
-    horas <- (min_ini % 1440) div 60
-    minutos <- (min_ini % 1440) % 60
+    anos <- int(dia_ini / 365)
+    meses <- int((dia_ini % 365) / 30)
+    dias <- (dia_ini % 365) % 30
 
-    escreva("Tempo Total: ",dias,"d : ",horas,"h : ",minutos,"m")
+    escreva("Tempo Total: ",anos,"a : ",meses,"m : ",dias,"d")
 
 fimalgoritmo

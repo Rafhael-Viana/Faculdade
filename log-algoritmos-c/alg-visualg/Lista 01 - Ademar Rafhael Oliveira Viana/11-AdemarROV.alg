@@ -6,30 +6,18 @@ algoritmo "Inversor de Números" //Depois do 10° acaba a criatividade
 // Data atual  : 26/08/2023
 var
 
-numero,digito : inteiro
-v : vetor [0..2] de inteiro
-indice: inteiro
+numero,uni,dez,cent : inteiro
 
 inicio
 
-    escreva("Digite um número: ")
+    escreva("Digite um número (3 dígitos): ")
         leia(numero)
         escreval(numero)
 
-    //executa o codigo para cada elemento do vetor
-    para indice de 0 ate 2 faca
+        uni <- numero % 10
+        dez <- int(numero / 10) % 10
+        cent <- int(numero / 100) 
 
-        digito <- numero % 10
-        numero <- int(numero / 10)
-        v[indice] <- digito
-
-    fimpara
-
-    escreva("Número Invertido: ")
-    
-    //escreve cada um dos elementos do vetor
-    para indice de 0 ate 2 faca
-        escreva(v[indice])
-    fimpara
+    escreva("Número Invertido: ",uni,dez,cent)
 
 fimalgoritmo

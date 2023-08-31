@@ -6,24 +6,17 @@ algoritmo "Convertendo Unidades s -> hh:mm:ss"
 // Data atual  : 26/08/2023
 var
 
-segundos, minutos, horas : inteiro
+segundos_inicial,segundos, minutos, horas : real
 
 inicio
 
     escreva("Quantidade de Segundos: ")
-        leia(segundos)
-        escreval(segundos,"s")
+        leia(segundos_inicial)
+        escreval(segundos_inicial,"s")
 
-    enquanto (segundos >= 60) faca
-        se (segundos >= 60) entao
-            minutos <- minutos + 1
-            segundos <- segundos - 60
-        fimse
-        se (minutos >= 60) entao
-            horas <- horas + 1
-            minutos <- minutos - 60
-        fimse
-    fimenquanto
+    horas <- int(segundos_inicial / 3600)
+    minutos <- (segundos_inicial % 3600) div 60
+    segundos <- (segundos_inicial % 3600) % 60
 
     escreva("Tempo Total: ",horas,"h:",minutos,"m:",segundos,"s")
 

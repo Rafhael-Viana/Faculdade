@@ -23,10 +23,6 @@ inicio
     soma <- primeiro_num + segundo_num //calcula a soma entre o primeiro e segundo numeros.
     diferenca <- segundo_num - terceiro_num //calcula a diferença entre o segundo e terceiro numeros.
 
-    se (diferenca < 0) entao
-        diferenca <- diferenca * (-1)
-    fimse
-
     escreval("Soma: ",soma)
     escreva("Diferença: ",diferenca)
 

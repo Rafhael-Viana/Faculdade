@@ -6,24 +6,17 @@ algoritmo "Convertendo Unidades h -> sem:dias:hh"
 // Data atual  : 26/08/2023
 var
 
-horas, dias, semanas : inteiro
+horas_inicial,horas, dias, semanas : inteiro
 
 inicio
 
     escreva("Quantidade de Horas: ")
-        leia(horas)
-        escreval(horas,"h")
+        leia(horas_inicial)
+        escreval(horas_inicial,"h")
 
-    enquanto (horas >= 24) faca
-        se (horas >= 24) entao
-            dias <- dias + 1
-            horas <- horas - 24
-        fimse
-        se (dias >= 7) entao
-            semanas <- semanas + 1
-            dias <- dias - 7
-        fimse
-    fimenquanto
+    semanas <- int(horas_inicial / 168)
+    dias <- (horas_inicial % 168) div 24
+    horas <- (horas_inicial % 168) % 24
 
     escreva("Tempo Total: ",semanas,"sm : ",dias,"d : ",horas,"h")
 
