@@ -1,8 +1,8 @@
-Algoritmo "semnome"
+Algoritmo "Diário"
 // Disciplina   : [Algoritmos e Logica de Programação]
 // Professor   : Henrique Muller 
-// Descrição  : Aqui voce descreve o que o programa faz! (fun��o)
-// Autor(a)    : Nome do(a) aluno(a)
+// Descrição  : O programa lê a idade de uma pessoa expressa em anos, meses e dias e a expressa apenas em dias.
+// Autor(a)    : Ademar Rafhael Oliveira Viana
 // Data atual  : 31/08/2023
 
 Var

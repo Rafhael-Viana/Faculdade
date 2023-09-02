@@ -1,4 +1,4 @@
-algoritmo "Convertendo Unidades m -> dd:hh:mm"
+algoritmo "Calculo de Expressão"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
 // Descrição   : O programa lê três números inteiros e positivos (A, B, C) e calcule a seguinte expressão: d = (r + s) / 2, onde r = (a + b) ^ 2 e s = (b + c) ^ 2

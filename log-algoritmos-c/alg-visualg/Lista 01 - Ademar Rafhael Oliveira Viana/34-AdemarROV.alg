@@ -1,4 +1,4 @@
-algoritmo "Soma do inverso"
+algoritmo "Media"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
 // Descrição   : O programa lê 3 números, calcula e escreve a média dos números.

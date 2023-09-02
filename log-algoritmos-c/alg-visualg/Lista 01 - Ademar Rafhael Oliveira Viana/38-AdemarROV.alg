@@ -1,12 +1,12 @@
-algoritmo "Convertendo Unidades m -> dd:hh:mm"
+algoritmo "Somando Frações"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
-// Descrição   : O programa lê um número inteiro de minutos, calcula e escreve quantos dias, quantas horas e quantos minutos ele corresponde.
+// Descrição   : O programa lê 2 (duas) frações (numerador e denominador), calcula e escreve a soma destas frações, escrevendo o resultado em forma de fração.
 // Autor(a)    : Ademar Rafhael Oliveira Viana
 // Data atual  : 26/08/2023
 var
 
-numerador_1, denominador_1,numerador_2, denominador_2 : inteiro
+numerador_1, denominador_1,numerador_2, denominador_2 , num_frac_fin, den_frac_fin: inteiro
 
 inicio
 
@@ -26,6 +26,9 @@ inicio
         escreval(denominador_2)
     escreval(numerador_2 , "/", denominador_2)
 
-    fracao <- numerador 
+    num_frac_fin <- (numerador_1 * denominador_2) + (numerador_2 * denominador_1)
+    den_frac_fin <- (denominador_1 * denominador_2)
+
+    escreva("Resultado: " , num_frac_fin , "/", den_frac_fin)
 
 fimalgoritmo

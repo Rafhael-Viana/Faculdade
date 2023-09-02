@@ -1,7 +1,7 @@
-algoritmo "Convertendo Unidades m -> dd:hh:mm"
+algoritmo "Convertendo Unidades d -> aa:mm:dd"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
-// Descrição   : O programa lê um número inteiro de minutos, calcula e escreve quantos dias, quantas horas e quantos minutos ele corresponde.
+// Descrição   : O programa lê a idade de uma pessoa expressa em dias e a expressa em anos, meses e dias.
 // Autor(a)    : Ademar Rafhael Oliveira Viana
 // Data atual  : 26/08/2023
 var

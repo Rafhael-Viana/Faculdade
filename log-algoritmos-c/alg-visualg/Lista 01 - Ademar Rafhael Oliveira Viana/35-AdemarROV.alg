@@ -1,4 +1,4 @@
-algoritmo "Soma do inverso"
+algoritmo "Soma de Elementos"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
 // Descrição   : O programa lê um número inteiro (4 dígitos), calcula e escreve a soma dos elementos que o compõem. Ex.: número = 9534 ; soma = 9+5+3+4 = 21.

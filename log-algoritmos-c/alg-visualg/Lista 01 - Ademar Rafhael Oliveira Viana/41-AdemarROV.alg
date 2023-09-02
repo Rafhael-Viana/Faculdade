@@ -1,7 +1,7 @@
-algoritmo "Convertendo Unidades m -> dd:hh:mm"
+algoritmo "Custo de Consumidor"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
-// Descrição   : O programa o custo de fábrica de um carro e escreva o custo ao consumidor.
+// Descrição   : O programa recebe o custo de fábrica de um carro e escreve o custo ao consumidor.
 // Autor(a)    : Ademar Rafhael Oliveira Viana
 // Data atual  : 26/08/2023
 var

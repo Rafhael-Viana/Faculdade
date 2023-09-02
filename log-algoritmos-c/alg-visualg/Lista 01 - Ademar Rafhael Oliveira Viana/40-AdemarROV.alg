@@ -1,4 +1,4 @@
-algoritmo "Convertendo Unidades m -> dd:hh:mm"
+algoritmo "Calculando Gasto de Fumante"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : [Henrique Muller]
 // Descrição   : O programa calcula a quantidade de dinheiro gasta por um fumante. Dados de entrada: o número de anos que ele fuma, o no de cigarros fumados por dia e o preço de uma carteira (1 carteira tem 20 cigarros).
