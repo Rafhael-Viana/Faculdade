@@ -11,7 +11,6 @@ while (c < 6): # loop para a verificação mais rápida do ganhador.
     sorteio = (random.sample(range(0,60), 6))
     jogo = (random.sample(range(0,60), 20))
 
-
     sorteio.sort()
     jogo.sort()
 
@@ -31,7 +30,3 @@ while (c < 6): # loop para a verificação mais rápida do ganhador.
     else:
         print("\nNão foi dessa vez! O prêmio acumulou!\n")
         c = 0
-
-
-
-# print(random.sample(range(0,100), 4))
