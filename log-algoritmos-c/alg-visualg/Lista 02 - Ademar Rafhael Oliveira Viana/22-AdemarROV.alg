@@ -35,7 +35,7 @@ senao
         escreval("Tempo Esgotado!")
     senao
         se (h_fim < h_ini) entao
-            h <- abs(((h_fim - h_ini) * -1) -24)
+            h <- (h_fim - h_ini) + 24
         fimse
         
         se (m = 60) entao
