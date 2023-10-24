@@ -1,0 +1,93 @@
+<mxfile host="65bd71144e">
+    <diagram id="K9tdpp2gKXIHnt1HSWHF" name="Página-1">
+        <mxGraphModel dx="323" dy="1827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <UserObject label="" lucidchartObjectId="sv5FRH7WopwM" id="27">
+                    <mxCell style="html=1;jettySize=18;whiteSpace=wrap;fontSize=13.3;fontColor=#333333;fontStyle=1;strokeColor=#5E5E5E;strokeWidth=1.5;rounded=1;arcSize=12;edgeStyle=orthogonalEdgeStyle;startArrow=none;endArrow=block;endFill=1;exitX=0.009;exitY=0.5;exitPerimeter=0;entryX=0.009;entryY=0.5;entryPerimeter=0;" parent="1" edge="1">
+                        <mxGeometry width="100" height="100" relative="1" as="geometry">
+                            <Array as="points">
+                                <mxPoint x="735" y="1425"/>
+                                <mxPoint x="735" y="1114"/>
+                            </Array>
+                            <mxPoint x="836.1699999999992" y="1113.999999999999" as="targetPoint"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="28" value="Não" style="text;html=1;resizable=0;labelBackgroundColor=default;align=center;verticalAlign=middle;fontStyle=1;fontColor=#333333;fontSize=13.3;rounded=1;" parent="27" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <UserObject label="QUESTÃO 07 - AdemarROV" lucidchartObjectId="hB5FAly2sNbj" id="34">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=16.7;fontColor=#333333;spacing=0;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;fillColor=none;" parent="1" vertex="1">
+                        <mxGeometry x="214" y="-1417.5" width="180" height="45" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#000000;" parent="1" source="67" target="104" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <UserObject label="INICIO" lucidchartObjectId="Ef6FRvu7aNQY" id="67">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=13;spacing=3.8;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" parent="1" vertex="1">
+                        <mxGeometry x="564" y="-1440" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="111" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="104" target="110">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="degraus &amp;lt;- 0&lt;br&gt;turno &amp;lt;- 0" style="whiteSpace=wrap;html=1;fontSize=13;strokeColor=#5e5e5e;spacing=3.8;rounded=1;arcSize=9;strokeWidth=2.3;" parent="1" vertex="1">
+                    <mxGeometry x="560.73" y="-1257.5" width="125" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="110" target="115">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="dado &amp;lt;-&amp;nbsp;&lt;br&gt;aleatorio 1,6" style="whiteSpace=wrap;html=1;fontSize=13;strokeColor=#5e5e5e;spacing=3.8;rounded=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+                    <mxGeometry x="563.23" y="-1113.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="115" target="117">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="degraus &amp;lt;- &lt;br&gt;degraus + dado" style="whiteSpace=wrap;html=1;fontSize=13;strokeColor=#5e5e5e;spacing=3.8;rounded=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+                    <mxGeometry x="563.23" y="-973.75" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#FF0000;" edge="1" parent="1" source="117" target="119">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="454" y="-810.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="121" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="120">
+                    <mxGeometry x="-0.3956" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="124" value="" style="edgeStyle=none;html=1;strokeColor=#00CC00;" edge="1" parent="1" source="117" target="123">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="124">
+                    <mxGeometry x="-0.1203" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="degraus = 30" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;strokeColor=#5e5e5e;spacing=3.8;rounded=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+                    <mxGeometry x="577.12" y="-857.5" width="93.75" height="93.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="119" target="110">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="454" y="-1083.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="119" value="turno &amp;lt;- turno + 1" style="whiteSpace=wrap;html=1;fontSize=13;strokeColor=#5e5e5e;spacing=3.8;rounded=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+                    <mxGeometry x="394.005" y="-973.7549999999999" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <UserObject label="FIM" lucidchartObjectId="Ef6FRvu7aNQY" id="123">
+                    <mxCell style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;ellipse;fontSize=13;spacing=3.8;strokeColor=#5e5e5e;strokeOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;strokeWidth=2.3;" vertex="1" parent="1">
+                        <mxGeometry x="563.23" y="-690" width="120" height="90" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
