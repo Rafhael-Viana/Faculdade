@@ -2,13 +2,13 @@
 from datetime import datetime as dt
 import math
 
-# Definir lista de quartos e de cadastros(reservas)
+#? Definir lista de quartos e de cadastros(reservas)
 l_quartos = []
-cadastros = []
+cadastros = {}
 
 #? Implementar o loop do menu
 while True:
-    
+
     print("\n---------------------------------------------")
     print("|                    MENU                   |")
     print("---------------------------------------------")
@@ -61,13 +61,14 @@ while True:
                     if l_quartos.count(numero) == 0:
                         print("\nQuarto não registrado ou já cadastrado. Por favor, repita a operação...")
                     else:
-                        cliente = {
-                            "cliente": cliente,
-                            "data-entrada" : dt.now(),
-                            "numero_quarto": numero,
-                            "status" : "Ocupado"
-                        }
-                        cadastros.append(cliente)
+                        cadastros.update({ cliente : {
+                                    "cliente": cliente,
+                                    "data-entrada" : dt.now(),
+                                    "numero_quarto": numero,
+                                    "status" : "Ocupado"
+                                }
+                            }
+                        )
                         l_quartos.pop(l_quartos.index(numero))
                         print("\nReserva Concluída com Sucesso.\n")
                 createReservation(input("Nome: ").capitalize(),int(input("Numero do Quarto: ")))
@@ -77,12 +78,9 @@ while True:
                 print("Iniciando consulta...\n")
                 controle = ""
                 while controle != "q":
-                    num_quarto = int(input("Digite o número do quarto: "))
-                    def getClient(quarto):
-                        for i,cliente in enumerate(cadastros):
-                            if cadastros[i].get("numero_quarto") == quarto:
-                                return cliente
-                    info = getClient(num_quarto)
+                    def consultQuarto(cliente):
+                        return cadastros[cliente]
+                    info = consultQuarto(input("Digite o nome do cliente: ").capitalize())
                     if info is not None:
                         print(f'\nCliente: {info.get("cliente")}')
                         print(f'Data-Entrada: {info.get("data-entrada").strftime("%d-%m-%Y %H:%M:%S")}')
@@ -91,7 +89,7 @@ while True:
                     else:
                         print('\nCliente: ')
                         print('Data-Entrada: ')
-                        print(f'N° Quarto: {num_quarto}')
+                        print(f'N° Quarto: {info.get("numero_quarto")}')
                         print('Status: Disponível\n')
                     controle = input("Pressione 'q' para sair ou 'Enter' para continuar...\n")
 
@@ -99,28 +97,22 @@ while True:
             case 5:
                 print("\nIniciando cancelamento...\n")
                 def cancelReservation(cliente):
-                    for i,cadastro in enumerate(cadastros):
-                        if cadastro.get("cliente") == cliente:
-                            cadastros.pop(i)
-                            return "\nReserva Cancelada."
+                    cadastros.pop(cliente)
+                    return "\nReserva Cancelada."
                 print(cancelReservation(input("Digite o nome do cliente: ").capitalize()))
 
             #? Fechar Hospedagem
             case 6:
                 print("\nFechando hospedagem...\n")
-                reserva = input("Digite o nome do cliente: ").capitalize()
-                def pegarClient(cliente):
-                    for i,cadastro in enumerate(cadastros):
-                        if cadastros[i].get("cliente") == cliente:
-                            return cadastro
-                info = pegarClient(reserva)
+                def getClient(cliente):
+                    return cadastros[cliente]
+
+                info = getClient(input("Digite o nome do cliente: ").capitalize())
                 saida = dt.strptime(input("Data-Saída (dd/mm/aaaa hh:mm:ss): "),"%d/%m/%Y %H:%M:%S")
                 tempo = saida - info.get("data-entrada")
                 valor = math.ceil((tempo.total_seconds()/3600)/24) * 50
 
-                for item,hospede in enumerate(cadastros):
-                    if hospede.get("cliente") == reserva:
-                        cadastros.pop(item)
+                cadastros.pop(info.get("cliente"))
 
                 print("\n-------------------------------------------")
                 print(f"Estadia: {tempo}\nValor à pagar: {valor}R$")
