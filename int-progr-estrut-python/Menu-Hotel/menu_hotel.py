@@ -45,7 +45,8 @@ while True:
                 if not quartos:
                     print("\nNenhum quarto cadastrado...")
                 else:
-                    print(f"\nQuartos Disponíveis: {quartos}")
+                    
+                    print(f"\nQuartos Disponíveis: {' - '.join(str(x) for x in hf.empty_rooms(quartos))}")
 
             #? Criar Reserva
             case 3:
@@ -57,11 +58,11 @@ while True:
                 controle = ""
                 while controle != "q":
                     info = hf.get_client(input("Digite o numero do quarto: ").capitalize(),quartos)
-                    if info is not None:
+                    if info.get("Status") != "Disponível":
                         print(f'\nCliente: {info.get("cliente")}')
-                        print(f'Data-Entrada: {info.get("data-entrada").strftime("%d-%m-%Y %H:%M:%S")}')
+                        print(f'Data-Entrada: {info.get("data-entrada").strftime("%d/%m/%Y %H:%M:%S")}')
                         print(f'N° Quarto: {info.get("numero_quarto")}')
-                        print(f'Status: {info.get("status")}\n')
+                        print(f'Status: {info.get("Status")}\n')
                     else:
                         print('\nCliente: ')
                         print('Data-Entrada: ')
@@ -72,18 +73,18 @@ while True:
             #? Cancelar Reserva
             case 5:
                 print("\nIniciando cancelamento...\n")
-                cliente = input("Digite o nome do cliente: ").capitalize()
-                cadastros.pop(cliente)
-                print("Reserva Cancelada.")
+                hf.init_cadastro(quartos,input("Digite o numero do quarto: "))
+                print("\nReserva Cancelada.")
 
             #? Fechar Hospedagem
             case 6:
                 print("\nFechando hospedagem...\n")
-                info = hf.get_client(input("Digite o nome do cliente: ").capitalize(),cadastros)
+                num_quarto = input("Digite o numero do quarto: ")
+                info = hf.get_client(num_quarto,quartos)
                 saida = dt.strptime(input("Data-Saída (dd/mm/aaaa hh:mm:ss): "),"%d/%m/%Y %H:%M:%S")
                 tempo = saida - info.get("data-entrada")
                 valor = math.ceil((tempo.total_seconds()/3600)/24) * 50
-                cadastros.pop(info.get("cliente"))
+                hf.init_cadastro(quartos, num_quarto)
                 print("\n-------------------------------------------")
                 print(f"Estadia: {tempo}\nValor à pagar: {valor}R$")
 
@@ -91,8 +92,8 @@ while True:
             case 7:
                 break
 
-    # except ValueError:
-    #     print("\nOpção Inválida")
+    except ValueError:
+        print("\nOpção Inválida")
 
-    except KeyError:
-        print("\nCliente não cadastrado.")
+    # except KeyError:
+    #     print("\nCliente não cadastrado.")
