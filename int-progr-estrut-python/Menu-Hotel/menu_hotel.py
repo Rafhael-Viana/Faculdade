@@ -95,5 +95,5 @@ while True:
     except ValueError:
         print("\nOpção Inválida")
 
-    # except KeyError:
-    #     print("\nCliente não cadastrado.")
+    except KeyError:
+        print("\nCliente não cadastrado.")
