@@ -6,7 +6,6 @@ ent = int(input("Digite a hora de ent: ")) + int(input("Digite os minutos de ent
 saida = int(input("Digite a hora de saida: ")) + int(input("Digite os minutos da saida: ")) / 60
 
 #? implementar o formato 24h
-
 tempo = saida - ent
 if ent > saida:
     tempo = (24 - ent) + saida
