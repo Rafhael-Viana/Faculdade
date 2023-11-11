@@ -6,20 +6,18 @@ algoritmo "Somatório"
 // Data atual  : 05/11/2023
 var
 
-numero,fatorial,cast : inteiro
+numero,soma : inteiro
 
 inicio
 
+    numero <- 1
     escreval("Digite um número: ")
-    leia(numero)
-    cast <- 1
-    enquanto (numero > 1) faca
-        fatorial <- fatorial + (numero * (numero - cast))
-        numero <- numero - 1
-        cast <- cast + 1
-        //resultado <- resultado + fatorial
-    fimenquanto
+        enquanto (numero <> 0) faca
+            leia(numero)
+            soma <- soma + numero
+            escreval(numero)
+        fimenquanto
 
-    escreval("Fatorial: ",fatorial)
+        escreval("Total: ",soma)
 
 fimalgoritmo

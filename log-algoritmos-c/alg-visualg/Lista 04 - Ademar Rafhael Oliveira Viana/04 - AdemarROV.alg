@@ -12,9 +12,9 @@ inicio
 
    escreval("Digite um numero: ")
    leia(numero)
-   digitos <- 0
+   digitos <- 1
 
-   enquanto (numero mod 10) > 0 faca
+   enquanto (numero div 10) > 0 faca
       digitos <- digitos + 1
       numero <- numero div 10
    fimenquanto

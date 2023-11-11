@@ -17,6 +17,6 @@ inicio
       quadrado <- quadrado + 1
    fimenquanto
 
-   escreval("Menor quadrado: ", quadrado - 1)
+   escreval("Menor quadrado: ", (quadrado - 1) ^ 2)
 
 fimalgoritmo
